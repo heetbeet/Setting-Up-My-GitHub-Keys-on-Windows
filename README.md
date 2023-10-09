@@ -35,7 +35,23 @@ Visit [GitHub SSH Keys](https://github.com/settings/keys) and click on "New SSH 
 
 To ensure the SSH private key is only accessible by the current user:
 
-a. Right-click on the `id_rsa` file located typically in `C:\Users\[YourUsername]\.ssh\`. b. Choose "Properties" and then go to the "Security" tab. c. Click on the "Advanced" button. d. At the top of the window that opens, there's an "Owner" field. Ensure you are the owner. If not, click "Change" and set yourself as the owner. e. Disable inheritance by clicking on "Disable inheritance" at the bottom left. f. An option pops up; select "Remove all inherited permissions from this object." g. Apply the changes and ensure only your user account has access.
+- Right-click on the `id_rsa` file located typically in `C:\Users\[YourUsername]\.ssh\`. 
+- Choose "Properties" and then go to the "Security" tab.
+- Disable inheritance by clicking on "Disable inheritance" at the bottom left
+- An option pops up; select "Remove all inherited permissions from this object."
+- Apply the changes.
+- Add new Permissions only for yourself:
+
+![image](https://github.com/heetbeet/Setting-Up-My-GitHub-Keys-on-Windows/assets/4103775/9862dd0c-149a-4160-8150-7ea7fd465e7e)
+
+![image](https://github.com/heetbeet/Setting-Up-My-GitHub-Keys-on-Windows/assets/4103775/c9d15159-6b7f-43d1-8556-12c9afe14a0f)
+
+![image](https://github.com/heetbeet/Setting-Up-My-GitHub-Keys-on-Windows/assets/4103775/7ff313f7-8034-405d-8df7-9f4e83d103ad)
+
+![image](https://github.com/heetbeet/Setting-Up-My-GitHub-Keys-on-Windows/assets/4103775/ae09965c-1e79-40ff-b964-1c1a3ca883b3)
+
+![image](https://github.com/heetbeet/Setting-Up-My-GitHub-Keys-on-Windows/assets/4103775/17f441c1-a9f5-46d1-916d-c0563de2386e)
+
 
 **5. Setting Global Git Username and Email:**
 
