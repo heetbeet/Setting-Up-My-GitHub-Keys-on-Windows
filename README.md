@@ -110,4 +110,4 @@ In Git Bash, type:
 ssh -vT git@github.com
 ```
 
-If everything is set up correctly, you should receive a message saying, "You've successfully authenticated."
+If everything is set up correctly, you should receive a message at the end saying, "You've successfully authenticated."
