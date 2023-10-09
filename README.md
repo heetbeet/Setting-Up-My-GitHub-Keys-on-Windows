@@ -33,6 +33,20 @@ Visit [GitHub SSH Keys](https://github.com/settings/keys) and click on "New SSH 
 
 **4. Adjusting File Permissions on Windows:**
 
+I then get the following error when running `ssh -vT git@github.com`:
+
+```
+debug1: Server accepts key: C:\\Users\\simon/.ssh/id_rsa RSA SHA256:R2xEHr+U2jj7QnlKivyCX0o+95ETUAxwQIAudKrqZ7I
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions for 'C:\\Users\\simon/.ssh/id_rsa' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "C:\\Users\\simon/.ssh/id_rsa": bad permissions
+git@github.com: Permission denied (publickey).
+```
+
 To ensure the SSH private key is only accessible by the current user:
 
 - Right-click on the `id_rsa` file located typically in `C:\Users\[YourUsername]\.ssh\`. 
@@ -93,7 +107,7 @@ ssh-add ~/.ssh/id_rsa
 In Git Bash, type:
 
 ```bash
-ssh -T git@github.com
+ssh -vT git@github.com
 ```
 
 If everything is set up correctly, you should receive a message saying, "You've successfully authenticated."
