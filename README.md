@@ -51,10 +51,10 @@ To ensure the SSH private key is only accessible by the current user:
 
 - Right-click on the `id_rsa` file located typically in `C:\Users\[YourUsername]\.ssh\`. 
 - Choose "Properties" and then go to the "Security" tab.
-- Disable inheritance by clicking on "Disable inheritance" at the bottom left
+- Disable inheritance by clicking on "Disable inheritance" at the bottom left.
 - An option pops up; select "Remove all inherited permissions from this object."
 - Apply the changes.
-- Add new Permissions only for yourself:
+- Now add new permissions only for your local user:
 
 ![image](https://github.com/heetbeet/Setting-Up-My-GitHub-Keys-on-Windows/assets/4103775/9862dd0c-149a-4160-8150-7ea7fd465e7e)
 
